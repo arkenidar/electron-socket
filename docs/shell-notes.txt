@@ -1,0 +1,6 @@
+
+# npm run server
+# npm start
+
+cd /c/Users/dario/Dropbox/git/electron-js/electron-socket && node server.js # npm run server
+cd /c/Users/dario/Dropbox/git/electron-js/electron-socket && npx electron . # npm start
