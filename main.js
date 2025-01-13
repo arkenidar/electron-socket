@@ -22,12 +22,12 @@ function createWindow() {
 function connect() {
   socket = new Socket();
   socket.connect(3000, '127.0.0.1', () => {
-    console.log('Connected to server');
+    console.log('CLIENT Connected to server');
     socket.write('Hello from Electron!');
   });
 
   socket.on('data', (data) => {
-    console.log('@CLIENT Received:', data.toString());
+    console.log('@CLIENT Received (from server):', data.toString());
   });
 
   socket.on('close', () => {
